@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="movie.xml" generated="2011-11-05T23:09:59">
+
+<movie>
+	<name>Dark Knight</name>
+	<info>The Dark Knight is a 2008 superhero film directed, co-produced, and co-written by Christopher Nolan. Featuring the DC Comics character Batman, the film is the second part of Nolan's The Dark Knight Trilogy and a sequel to 2005's Batman Begins, starring an ensemble cast including Christian Bale, Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal and Morgan Freeman. In the film, Bruce Wayne/Batman (Bale), Police Lieutenant James Gordon (Oldman) and District Attorney Harvey Dent (Eckhart) form an alliance to dismantle organized crime in Gotham City, but are menaced by a criminal mastermind known as the Joker (Ledger) who seeks to undermine Batman's influence and create chaos.</info>
+</movie>
+
+
+<movie>
+	<name>Your Name</name>
+	<info>Your Name is a 2016 Japanese animated drama film written and directed by Makoto Shinkai and produced by CoMix Wave Films. The film was produced by Noritaka Kawaguchi and Genki Kawamura, with music composed by Radwimps. Based on Shinkai's novel of the same name published a month before the film's premiere, Your Name tells the story of a high school girl in rural Japan and a high school boy in Tokyo who swap bodies. The film stars the voices of Ryunosuke Kamiki, Mone Kamishiraishi, Masami Nagasawa, and Etsuko Ichihara.</info>
+</movie>
+
+
+<movie>
+	<name>Inception</name>
+	<info>Inception is a 2010 science fiction film written, co-produced, and directed by Christopher Nolan, and co-produced by Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious, and is offered a chance to have his criminal history erased as payment for a seemingly impossible task: "inception", the implantation of another person's idea into a target's subconscious.The ensemble cast additionally includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Ellen Page, Tom Hardy, Dileep Rao, Cillian Murphy, Tom Berenger, and Michael Caine.</info>
+</movie>
+
+
+<movie>
+	<name>John Wick</name>
+	<info>John Wick is a 2014 American neo-noir action thriller film directed by Chad Stahelski and David Leitch. It stars Keanu Reeves, Michael Nyqvist, Alfie Allen, Adrianne Palicki, Bridget Moynahan, Dean Winters, Ian McShane, John Leguizamo and Willem Dafoe. The first installment in the John Wick film series, the story focuses on John Wick (Reeves), a retired hitman seeking vengeance for the theft of his vintage car and the killing of his puppy, a gift from his recently deceased wife.Stahelski and Leitch directed the film together, though Leitch was uncredited</info>
+</movie>
+
+
+<movie>
+	<name>Avengers</name>
+	<info>Marvel's The Avengers (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland), or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.It is the sixth film in the Marvel Cinematic Universe. The film was written and directed by Joss Whedon and features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury, director of the peacekeeping organization S.H.I.E.L.D., recruits Iron Man, Captain America, the Hulk, and Thor to form a team that must stop Thor's brother Loki from subjugating Earth.</info>
+</movie>
+
+<movie>
+	<name>Star Wars: The Force Awakens</name>
+	<info>Star Wars: The Force Awakens (also known as Star Wars: Episode VII – The Force Awakens) is a 2015 American epic space opera film co-written, co-produced and directed by J. J. Abrams. The sequel to 1983's Return of the Jedi, The Force Awakens is the first installment of the Star Wars sequel trilogy. It stars Harrison Ford, Mark Hamill, Carrie Fisher, Adam Driver, Daisy Ridley, John Boyega, Oscar Isaac, Lupita Nyong'o, Andy Serkis, Domhnall Gleeson, Anthony Daniels, Peter Mayhew, and Max von Sydow. Produced by Lucasfilm Ltd. and Abrams' production company Bad Robot Productions and distributed worldwide by Walt Disney Studios Motion Pictures, The Force Awakens was the first Star Wars film not produced by franchise creator George Lucas. Set 30 years after Return of the Jedi, it follows Rey, Finn and Poe Dameron's search for Luke Skywalker and their fight alongside the Resistance, led by veterans of the Rebel Alliance, against Kylo Ren and the First Order, a successor to the Galactic Empire.</info>
+</movie>
+
+</dataroot>

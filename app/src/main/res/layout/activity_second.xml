@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    tools:context="com.pratik.cardviews.SecondActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:transitionName="cardImage"
+            android:id="@+id/secondActivityImage"
+            android:scaleType="fitXY"
+            android:src="@drawable/dark_knight"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark Knight"
+            android:textColor="#fff"
+            android:layout_below="@+id/secondActivityImage"
+            android:textSize="25dp"
+            android:id="@+id/secondTitle"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/imdb_logo"
+            android:layout_below="@+id/secondTitle"
+            android:id="@+id/imdb_logo"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondRating"
+            android:text="9/10"
+            android:textSize="20dp"
+            android:textColor="#ccc"
+            android:layout_below="@+id/secondTitle"
+            android:layout_toRightOf="@+id/imdb_logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondTitle"
+            android:text="Genre- Action/Adventure"
+            android:textColor="#ccc"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/movieGenre"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imdb_logo"
+            android:text="As beautifully animated as it is emotionally satisfying, Your Name adds another outstanding chapter to writer-director Makoto Shinkai's filmography."
+            android:textColor="#ccc"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:id="@+id/movieInfoBox"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Info"
+            android:id="@+id/more_info"
+            android:layout_below="@+id/movieInfoBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ghost_button"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
