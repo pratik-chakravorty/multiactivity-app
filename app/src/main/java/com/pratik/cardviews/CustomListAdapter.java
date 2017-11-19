@@ -17,25 +17,30 @@ import java.util.List;
 
 /**
  * Created by Pratik on 10/30/2017.
+ * This is the custom list adapter in which each row is a cardview
  */
 
 public class CustomListAdapter extends ArrayAdapter<Cards> {
 
+    //declare the context object and the resource variable
     private Context mContext;
     private int mResource;
 
+    //Using the view-holder design pattern to make listviews more smoother
     private static class ViewHolder {
         TextView cardTitle;
         TextView rating;
         ImageView cardImage;
     }
 
+    //constructor method of the customlistadapter class
      public CustomListAdapter(Context context, int resource, ArrayList<Cards> objects) {
         super(context,resource,objects);
         mContext = context;
         mResource = resource;
     }
 
+    //getview method will be used to paint each row of the listview with the data inside a cardview
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

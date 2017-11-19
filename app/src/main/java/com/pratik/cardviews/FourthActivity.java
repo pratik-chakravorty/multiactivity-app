@@ -36,8 +36,10 @@ public class FourthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fourth);
 
+        //sets the title of the current activity
         this.setTitle("Movie Web Data");
 
+        //check if the user is online or not
         if(isOnline()==false) {
             AlertDialog.Builder builder;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -59,49 +61,57 @@ public class FourthActivity extends AppCompatActivity {
         }
 
 
+        //get the data using Intents
         Intent mIntent = getIntent();
 
         final String getUrl = mIntent.getStringExtra("url");
 
+        //pass the url data from the intents to the global String variable url
         url = getUrl;
+
+        //initialize the scrollview
         scroll = (ScrollView)findViewById(R.id.scrollView);
 
 
-
+        //initialize the webview and the progress bar
         webview = (WebView)findViewById(R.id.webview);
         mPb = (ProgressBar) findViewById(R.id.activity_main_pb);
 
+        //add javascript and other webview settings to the webview object
         webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setDomStorageEnabled(true);
         webview.getSettings().setBuiltInZoomControls(true);
         webview.setBackgroundColor(0);
 
+        //initialize a custom webview client
         webview.setWebViewClient(new MyWebViewClient(this));
         webview.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 
+        //launch the asynctask for fetching the data from the web
         new MyAsyncTask().execute();
     }
     class MyAsyncTask extends AsyncTask<Void,Void,Void> {
         @Override
         protected Void doInBackground(Void... voids) {
+            //calling of this method will result in data extraction from a web-page inside web-view
             extractDatafromURL();
             return null;
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
+            //This is to ensure no null values are printed on the screen if the user is offline
             if(mHtmlString==null) {
                 return;
             }
+            //loads the extracted data from the webview.
             webview.loadData("<html><head><style>body{color:#fff;}a{text-decoration:none;color:#ccc;}</style></head>"+mHtmlString+infoContent+"</html>","text/html; charset=utf-8","UTF-8");
             super.onPostExecute(aVoid);
 
         }
     }
     private void extractDatafromURL() {
-
-
-
+        //Using jsoup library to extract the DOM representation of the page and then extracting a specific data
         try {
             Document doc = Jsoup.connect(url).get();
             org.jsoup.nodes.Element content = doc.getElementById("movieSynopsis");
@@ -120,6 +130,8 @@ public class FourthActivity extends AppCompatActivity {
     }
 
     public void onBackPressed() {
+        //Making sure the back-button functionality is enabled within the webview
+
         if (webview.canGoBack()) { //if going back is possible in webview then go back within webview
             webview.goBack();
         } else {
@@ -131,12 +143,12 @@ public class FourthActivity extends AppCompatActivity {
     }
 
     public void showProgressBar(int visibilityMode) {
-
+        //Code for the progress-bar visibility
         mPb.setVisibility(visibilityMode);
 
     }
 
-
+    //method to check if the user is online or not
     private boolean isOnline() {
         ConnectivityManager conMgr = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = conMgr.getActiveNetworkInfo();

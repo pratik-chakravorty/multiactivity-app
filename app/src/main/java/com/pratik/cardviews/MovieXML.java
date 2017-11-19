@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 /**
  * Created by Pratik on 11/14/2017.
+ * This class is uses for fetching the parsed xml data from the xmlparser
  */
 
 public class MovieXML implements Serializable{

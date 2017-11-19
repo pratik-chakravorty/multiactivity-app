@@ -2,6 +2,8 @@ package com.pratik.cardviews;
 
 /**
  * Created by Pratik on 11/14/2017.
+ * This is the movie data java class for storing the movie data that will be used in the second
+ * activity
  */
 
 public class MovieData {

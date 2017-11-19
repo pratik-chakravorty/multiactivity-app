@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 /**
  * Created by Pratik on 11/14/2017.
+ * The movie info class is used for fetching the movie data that will be used in the second
+ * activity
  */
 
 public class MovieInfo implements Serializable{

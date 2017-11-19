@@ -2,6 +2,8 @@ package com.pratik.cardviews;
 
 /**
  * Created by Pratik on 10/30/2017.
+ * This is the cards model that is utilized in the first activity for displaying the list data using
+ * a custom list adapter
  */
 
 public class Cards {

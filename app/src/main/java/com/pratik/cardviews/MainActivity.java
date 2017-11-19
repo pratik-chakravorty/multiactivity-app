@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         //Initialize the Listview
         list = (ListView)findViewById(R.id.listView);
 
-        //First create an arrayList to add in the image URls and the Card Title
+        //create an arrayList to add in the image URls and the Card Title
         ArrayList<Cards> arrayList = new ArrayList<>();
 
+        //passing data to the custom list adapter
         arrayList.add(new Cards(R.drawable.dark_knight,"Dark Knight","9.0"));
         arrayList.add(new Cards(R.drawable.yourname,"Your Name","8.3"));
         arrayList.add(new Cards(R.drawable.inception,"Inception","8.8"));
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new Cards(R.drawable.starwars,"Star Wars:Force Awaken","8.1"));
 
 
-        //Second is creating a custom list adapter object
+        //creating a custom list adapter object
         CustomListAdapter adapter = new CustomListAdapter(this,R.layout.activity_main,arrayList);
         list.setAdapter(adapter);
 

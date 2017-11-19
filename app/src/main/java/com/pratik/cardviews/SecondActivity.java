@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-
+    //declare the view objects
     private ImageView image;
     private TextView text;
     private TextView movieInfo;
@@ -28,9 +28,10 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        //sets the title of the current activity
         this.setTitle("Movie Information");
 
-
+        //initlaize the view objects
         image = (ImageView)findViewById(R.id.secondActivityImage);
         text = (TextView)findViewById(R.id.secondTitle);
         movieInfo = (TextView)findViewById(R.id.movieInfoBox);
@@ -38,19 +39,21 @@ public class SecondActivity extends AppCompatActivity {
         genre = (TextView)findViewById(R.id.movieGenre);
         moreInfo =(Button)findViewById(R.id.more_info);
 
+        //get data through intents
         Intent intent = getIntent();
         int id = intent.getIntExtra("image",0);
 
-        Log.i("image",String.valueOf(id));
-
+        //set the image resource
         image.setImageResource(id);
 
         String title = intent.getStringExtra("movieTitle");
 
+        //set the title
         text.setText(title);
 
         String info = intent.getStringExtra("movieInfo");
 
+        //set the movie information
         movieInfo.setText(info);
 
         String movieRating = intent.getStringExtra("movieRating");
@@ -58,10 +61,13 @@ public class SecondActivity extends AppCompatActivity {
 
         String movieGenre = intent.getStringExtra("movieGenre");
 
+        //set the genre
         genre.setText("Genre- "+movieGenre);
 
+        //initialize the xml parser
         parser = new XMLParser(getApplicationContext());
 
+        //get the position value
         final int position = intent.getIntExtra("pos",0);
 
         moreInfo.setOnClickListener(new View.OnClickListener() {

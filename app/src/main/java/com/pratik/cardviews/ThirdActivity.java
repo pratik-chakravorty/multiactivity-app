@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ThirdActivity extends AppCompatActivity {
-
+    //declare the view objects
     private TextView movietitle;
     private TextView movieInfo;
     private Button webInfo;
@@ -22,22 +22,27 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
-
+        //sets the title
         this.setTitle("Movie XML Data");
 
+        //initialize the view objects
         movietitle = (TextView)findViewById(R.id.thirdMovieTitle);
         movieInfo = (TextView)findViewById(R.id.thirdMovieInfo);
         webInfo = (Button)findViewById(R.id.webMovieInfo);
 
+        //get the data through intents
         Intent mIntent = getIntent();
         String title = mIntent.getStringExtra("movieTitle");
         String info = mIntent.getStringExtra("movieInfo");
 
+        //set the data
         movietitle.setText(title);
         movieInfo.setText(info);
 
+        //get the position
         final int position = mIntent.getIntExtra("position",0);
 
+        //based on the position determine the url
         switch(position) {
             case 0: url="https://www.rottentomatoes.com/m/the_dark_knight/";
             break;
