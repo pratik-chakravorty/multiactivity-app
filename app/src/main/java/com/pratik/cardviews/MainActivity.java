@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_layout);
 
+        this.setTitle("Movie List");
+
         //Initialize the Listview
         list = (ListView)findViewById(R.id.listView);
 

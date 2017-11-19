@@ -28,6 +28,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        this.setTitle("Movie Information");
+
 
         image = (ImageView)findViewById(R.id.secondActivityImage);
         text = (TextView)findViewById(R.id.secondTitle);
@@ -69,6 +71,7 @@ public class SecondActivity extends AppCompatActivity {
                 MovieXML data = parser.getData(position);
                 mIntent.putExtra("movieTitle",data.getMovieName());
                 mIntent.putExtra("movieInfo",data.getMovieInfo());
+                mIntent.putExtra("position",position);
                 startActivity(mIntent);
             }
         });

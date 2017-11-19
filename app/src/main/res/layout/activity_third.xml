@@ -37,7 +37,7 @@
                 android:background="@drawable/ghost_button"
                 android:text="Web Info"
                 android:textColor="#fff"
-                android:id="@+id/xmlMovieInfo"
+                android:id="@+id/webMovieInfo"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/thirdMovieInfo"/>
         </RelativeLayout>
